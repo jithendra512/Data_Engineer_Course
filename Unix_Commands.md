@@ -1,9 +1,17 @@
 #### Basic Commands For Linux/Commands for the Data Engineer #########
 #### System Information Commands ######
 
-1. uname -a
-## Purpose: Shows complete system information (kernel, OS, architecture).
-## Sample Output: Linux server01 5.15.0-91-generic #101-Ubuntu SMP x86_64 GNU/Linux
+### `uname -a`
+**Purpose:** Shows complete system information (kernel, OS, architecture).
+
+```bash
+uname -a
+```
+
+**Sample Output:** 
+```
+  Linux server01 5.15.0-91-generic #101-Ubuntu SMP x86_64 GNU/Linux
+```
 
 2. whoami
 ## Purpose: Displays the current logged-in user.
