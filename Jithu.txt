@@ -1,0 +1,8 @@
+Course over view 
+
+Data Engineering 
+  SQL/PLSQL 
+  Unix 
+  Datawarehouse Concepts 
+  Python Basics 
+  Any ETL Tool
