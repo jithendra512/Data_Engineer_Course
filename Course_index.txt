@@ -1,0 +1,313 @@
+DATA Engineering 
+---------------
+SQL Concepts
+Unix 
+Datwarehouse 
+ETL Tool --- DBT tool 
+
+
+--------Softwares----------
+1. Git Bash -- unix commands -- opensource
+2. MySQL Workbench -- sql queries -- opensource
+3. Excel    -- data analysis    --not opensource
+4. Notepad++ -- code editor  -- opensource  
+5. VS Code  -- code editor -- opensource
+6. Snowflake -- data warehouse -- not opensource --30 days is free for learning 
+
+
+--------------SQL INDEX----------------
+0.introduction  
+what is database 
+tables 
+different types of databases 
+
+
+
+1. Table Management (DDL)
+    CREATE TABLE – Create a new table  
+    DROP TABLE – Delete a table  
+    ALTER TABLE – Modify table structure  
+    TRUNCATE TABLE – Remove all records (fast)  
+    RENAME TABLE – Rename a table  
+
+2. Data Manipulation (DML)
+    INSERT – Add new records    
+    UPDATE – Modify existing records  
+    DELETE – Remove records  
+    MERGE – Insert or update based on condition (UPSERT)  
+
+3. Data Querying (DQL)
+    SELECT – Retrieve data  
+    DISTINCT – Remove duplicate rows  
+    WHERE – Filter rows  
+    ORDER BY – Sort results  
+    GROUP BY – Group rows  
+    HAVING – Filter grouped data  
+    LIMIT / TOP / FETCH – Restrict number of rows  
+    OFFSET – Skip rows  
+
+4. Data Control Language (DCL)
+    GRANT – Grant permissions  
+    REVOKE – Revoke permissions  
+
+5. Transactions (TCL)
+    BEGIN / START TRANSACTION – Start transaction  
+    COMMIT – Save changes  
+    ROLLBACK – Undo changes  
+    SAVEPOINT – Create rollback point  
+
+6. Indexing
+    CREATE INDEX – Create an index  
+    DROP INDEX – Remove an index  
+    ALTER INDEX – Modify an index  
+
+7. joins -very important
+    left join
+    right join
+    inner join
+    outer join
+    cross join
+
+
+8. Partitioning
+    CREATE PARTITION – Create a partition  
+    DROP PARTITION – Remove a partition  
+    ALTER PARTITION – Modify a partition  
+
+9. Clustering
+    CREATE CLUSTER – Create a cluster  
+    DROP CLUSTER – Remove a cluster  
+    ALTER CLUSTER – Modify a cluster  
+
+10. Materialized Views
+    CREATE MATERIALIZED VIEW – Create a materialized view  
+    DROP MATERIALIZED VIEW – Remove a materialized view  
+    ALTER MATERIALIZED VIEW – Modify a materialized view  
+
+11. Triggers
+    CREATE TRIGGER – Create a trigger  
+    DROP TRIGGER – Remove a trigger  
+    ALTER TRIGGER – Modify a trigger  
+
+12. Functions
+    CREATE FUNCTION – Create a function  
+    DROP FUNCTION – Remove a function  
+    ALTER FUNCTION – Modify a function  
+
+13. Synonyms
+    CREATE SYNONYM – Create a synonym  
+    DROP SYNONYM – Remove a synonym  
+    ALTER SYNONYM – Modify a synonym  
+
+
+14. Views
+    CREATE VIEW – Create a view  
+    DROP VIEW – Remove a view  
+    ALTER VIEW – Modify a view  
+
+15. Procedures
+    CREATE PROCEDURE – Create a procedure  
+    DROP PROCEDURE – Remove a procedure  
+    ALTER PROCEDURE – Modify a procedure  
+
+
+16. Packages
+    CREATE PACKAGE – Create a package  
+    DROP PACKAGE – Remove a package  
+    ALTER PACKAGE – Modify a package  
+
+
+
+-----------Unix---------------- 
+
+1. File & Directory Management
+    ls – List files and directories
+    pwd – Print working directory
+    cd – Change directory
+    mkdir – Create directory
+    rmdir – Remove empty directory
+    touch – Create empty file / update timestamp
+    cp – Copy files/directories
+    mv – Move or rename files/directories
+    rm – Remove files/directories
+    stat – File information
+    find – Search files/directories   
+2. File Viewing & Editing
+    cat – View file content
+    less – View file page by page
+    more – View file (basic pager)
+    head – Show first lines of file
+    tail – Show last lines of file
+    tail -f – Live file monitoring
+    nano – Simple editor
+    vi / vim – Advanced editor
+3. Search & Text Processing
+    grep – Search text patterns
+    awk – Pattern scanning & processing
+    sed – Stream editor
+    cut – Extract columns
+    sort – Sort lines
+    uniq – Remove duplicates
+    wc – Word/line/count
+    tr – Translate characters
+4. File Permissions & Ownership
+    chmod – Change permissions
+    chown – Change owner
+    chgrp – Change group
+    umask – Default permissions
+5. Compression & Archiving
+    tar – Archive files
+    gzip – Compress files
+    gunzip – Decompress
+    zip – Zip files
+    unzip – Extract zip
+6. Process Management
+    ps – View running processes
+    top – Real-time process view
+    htop – Enhanced process viewer
+    kill – Kill process
+    killall – Kill by name
+    bg – Resume in background
+    fg – Resume in foreground
+    jobs – Show background jobs
+    nohup – Run immune to hangup
+7. Disk & Memory Usage
+    df – Disk space usage
+    du – Directory size
+    free – Memory usage
+    mount – Mount filesystem
+    umount – Unmount filesystem
+8. Networking
+    ping – Network connectivity
+    ifconfig / ip – Network interface
+    netstat – Network statistics
+    ss – Socket statistics
+    curl – API / URL requests
+    wget – Download files
+    scp – Secure copy
+    ssh – Remote login
+9. Environment & System Info
+    env – Environment variables
+    export – Set environment variable
+    uname – System information
+    hostname – System hostname
+    whoami – Current user
+    who – Logged-in users
+    uptime – System running time
+    date – Date and time
+10. Shell & Utilities
+    history – Command history
+    alias – Create shortcut commands
+    unalias – Remove alias
+    which – Command location
+    whereis – Binary/source location
+    clear – Clear terminal
+    exit – Exit shell
+11. Redirection & Pipes (Very Important)
+    > – Redirect output
+    >> – Append output
+    < – Input redirection
+    | – Pipe output 
+    2> – Redirect errors
+    & – Run in background
+12. File Permissions & Ownership
+    chmod – Change permissions
+    chown – Change owner
+    chgrp – Change group
+    umask – Default permissions
+13. System Info
+    whoami - Current user
+    hostname - System hostname
+    date - Date and time
+    uptime - System running time
+    cal - Calendar 
+
+
+----Very Important----Unix Commands---------
+ls, cd, pwd, cp, mv, rm, cat, grep, chmod, tar, ps, top, df, du, ssh
+
+-----------DataWare House Concepts-----------
+
+1. Basics
+    Data Warehouse – Centralized repository for integrated data  
+    OLTP – Online Transaction Processing (day-to-day operations)  
+    OLAP – Online Analytical Processing (reporting & analysis)  
+    Subject-Oriented – Organized around key business subjects  
+    Integrated – Data from multiple sources  
+    Time-Variant – Historical data stored over time  
+    Non-Volatile – Read-only, no frequent updates  
+
+2. Data Warehouse Architecture
+    Source Systems – OLTP, files, APIs, external feeds  
+    Staging Area – Temporary storage for raw data  
+    ETL – Extract, Transform, Load  
+    ELT – Extract, Load, Transform  
+    Data Warehouse – Central storage  
+    Data Mart – Department-level subset  
+    Presentation Layer – Reporting & BI tools  
+
+3. Data Modeling
+    Fact Table – Stores measurable business data  
+    Dimension Table – Descriptive attributes  
+    Surrogate Key – System-generated key  
+    Natural Key – Business key  
+    Grain – Level of detail in fact table  
+    Degenerate Dimension – Dimension without table  
+
+4. Schema Types
+    Star Schema – One fact, many dimensions  
+    Snowflake Schema – Normalized dimensions  
+    Galaxy Schema – Multiple fact tables  
+    Flat Schema – Denormalized structure  
+
+5. Fact Tables
+    Transaction Fact – One row per transaction  
+    Snapshot Fact – Periodic data capture  
+    Accumulating Snapshot – Lifecycle tracking  
+    Factless Fact – Event tracking without measures   
+
+6. Slowly Changing Dimensions (SCD)
+    Type 0 – No change allowed  
+    Type 1 – Overwrite old data  
+    Type 2 – New row with history  
+    Type 3 – Limited history (new column)  
+    Type 4 – Separate history table  
+  
+7. ETL / ELT Concepts
+    Extraction – Pull data from sources  
+    Transformation – Cleanse & enrich data  
+    Loading – Insert into warehouse  
+    Full Load – Reload entire data  
+    Incremental Load – Load changes only  
+    CDC – Change Data Capture  
+    Watermark – Track last processed record 
+
+8. Data Quality
+    Accuracy – Correct data  
+    Completeness – No missing values  
+    Consistency – Same data everywhere  
+    Timeliness – Data availability on time  
+    Validity – Conforms to rules  
+    Uniqueness – No duplicates  
+
+9. Performance Optimization
+    Indexing – Speed up queries  
+    Partitioning – Split large tables  
+    Clustering – Data organization  
+    Materialized View – Precomputed results  
+    Aggregates – Pre-summarized data  
+
+10. Data Governance & Security
+    Data Lineage – Track data flow  
+    Data Ownership – Responsibility definition  
+    Access Control – Role-based security  
+    Masking – Hide sensitive data  
+    Auditing – Track data access  
+
+----Very Important----Data Warehouse Concepts----
+
+    Fact Table, Dimension Table, Grain,
+    Star Schema, SCD Type 2,
+    ETL vs ELT, Incremental Load,
+    Conformed Dimension, CDC,
+    OLTP vs OLAP
