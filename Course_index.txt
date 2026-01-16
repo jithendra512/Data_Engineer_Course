@@ -69,12 +69,12 @@ different types of databases
     cross join
 
 
-8. Partitioning
+8. Partitioning -
     CREATE PARTITION – Create a partition  
     DROP PARTITION – Remove a partition  
     ALTER PARTITION – Modify a partition  
 
-9. Clustering
+9. Clustering  -- less important
     CREATE CLUSTER – Create a cluster  
     DROP CLUSTER – Remove a cluster  
     ALTER CLUSTER – Modify a cluster  
@@ -84,7 +84,7 @@ different types of databases
     DROP MATERIALIZED VIEW – Remove a materialized view  
     ALTER MATERIALIZED VIEW – Modify a materialized view  
 
-11. Triggers
+11. Triggers -- less important
     CREATE TRIGGER – Create a trigger  
     DROP TRIGGER – Remove a trigger  
     ALTER TRIGGER – Modify a trigger  
@@ -94,7 +94,7 @@ different types of databases
     DROP FUNCTION – Remove a function  
     ALTER FUNCTION – Modify a function  
 
-13. Synonyms
+13. Synonyms --less important
     CREATE SYNONYM – Create a synonym  
     DROP SYNONYM – Remove a synonym  
     ALTER SYNONYM – Modify a synonym  
@@ -105,13 +105,13 @@ different types of databases
     DROP VIEW – Remove a view  
     ALTER VIEW – Modify a view  
 
-15. Procedures
+15. Procedures -- less important
     CREATE PROCEDURE – Create a procedure  
     DROP PROCEDURE – Remove a procedure  
     ALTER PROCEDURE – Modify a procedure  
 
 
-16. Packages
+16. Packages --less important
     CREATE PACKAGE – Create a package  
     DROP PACKAGE – Remove a package  
     ALTER PACKAGE – Modify a package  
