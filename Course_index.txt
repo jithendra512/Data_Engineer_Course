@@ -13,7 +13,7 @@ ETL Tool --- DBT tool
 4. Notepad++ -- code editor  -- opensource  
 5. VS Code  -- code editor -- opensource
 6. Snowflake -- data warehouse -- not opensource --30 days is free for learning 
-
+https://signup.snowflake.com/?trial=student --- it will give 120 days of account for student account. 
 
 --------------SQL INDEX----------------
 0.introduction  
